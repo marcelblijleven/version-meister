@@ -1,11 +1,11 @@
 package api
 
 import (
-	"github.com/marcelblijleven/version-meister/jira"
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/marcelblijleven/version-meister/jira"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -221,7 +221,7 @@ func (c *Client) AddVersionToIssue(issue jira.Issue, version jira.Version) error
 		return fmt.Errorf("AddVersion response status is %v", resp.StatusCode)
 	}
 
-	fmt.Printf("Successfully added version %v to issue %v", version.Name, issue.Key)
+	fmt.Printf("Successfully added version %v to issue %v\n", version.Name, issue.Key)
 	return nil
 }
 
