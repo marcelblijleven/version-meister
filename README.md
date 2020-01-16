@@ -8,8 +8,8 @@ package main
 
 import (
     "fmt"
-	"github.com/marcelblijleven/version-meister/api"
-	"github.com/marcelblijleven/version-meister/cli"
+    "github.com/marcelblijleven/version-meister/api"
+    "github.com/marcelblijleven/version-meister/cli"
     "github.com/marcelblijleven/version-meister/jira"
     "os"
 )
